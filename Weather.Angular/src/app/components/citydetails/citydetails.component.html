@@ -1,0 +1,84 @@
+<div>
+    <h1 class="heading">Weather Forcast</h1>
+    <div class="d-flex align-items-end flex-column me-5">
+        <div class="cityAdd" (click)="addCityPopUp(addCitypop)">Add City</div>
+    </div>
+    <div class="d-flex flex-row justify-content-center">
+        <div class="my-auto fw-bold">Select City : </div>
+        <div class="w-75 ps-2">
+            <form [formGroup]="passCityId">
+                <ng-select (change)="changeCity()" formControlName="cityId" placeholder="Select City" required>
+                    <ng-option *ngFor="let city of this.cityArr" [value]="city.cityId">
+                        {{city.cityName}}
+                    </ng-option>
+                </ng-select>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="d-flex flex-row justify-content-center" *ngIf="this.weatherArr.id">
+        <div class="whetherBox me-3 mb-3 mt-3 p-2">
+            <h1 class="divHeading">Location Details</h1>
+            <div class="listItem">Name : {{this.weatherArr.name}}</div>
+            <div class="listItem">Timezone : {{this.weatherArr.timezone}}</div>
+            <div class="listItem">Latitude : {{this.weatherArr.coord.lat}}</div>
+            <div class="listItem">Longitude : {{this.weatherArr.coord.lon}}</div>
+        </div>
+        <div class="whetherBox me-3 mb-3 mt-3 p-2">
+            <h1 class="divHeading">Weather</h1>
+            <div class="listItem">Main : {{this.weatherArr.weather[0].main}}</div>
+            <div class="listItem">Description : {{this.weatherArr.weather[0].description}}</div>
+            <div class="listItem">Humidity : {{this.weatherArr.main.humidity}}</div>
+            <div class="listItem">Pressure : {{this.weatherArr.main.pressure}}</div>
+        </div>
+        <div class="whetherBox me-3 mb-3 mt-3 p-2">
+            <h1 class="divHeading">Wind</h1>
+            <div class="listItem">Speed : {{this.weatherArr.wind.speed}}</div>
+            <div class="listItem">Deg : {{this.weatherArr.wind.deg}}</div>
+            <div class="listItem">Gust : {{this.weatherArr.wind.gust}}</div>
+        </div>
+        <div class="whetherBox me-3 mb-3 mt-3 p-2">
+            <h1 class="divHeading">Sys</h1>
+            <div class="listItem">Country : {{this.weatherArr.sys.country}}</div>
+            <div class="listItem">Sunrise : {{this.weatherArr.sys.sunrise}}</div>
+            <div class="listItem">Sunset : {{this.weatherArr.sys.sunset}}</div>
+        </div>
+    </div>
+</div>
+
+
+<ng-template #addCitypop>
+    <div class="addCityHeader">Add New City</div>
+    <mat-dialog-content>
+        <mat-card>
+            <mat-card-content>
+                <div>
+                    <form [formGroup]="addCity">
+                        <table>
+                            <tr>
+                                <td><label class="cityLabel">City Name</label></td>
+                                <td><input formControlName="cityName" class="cityInput" placeholder="add city name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="cityLabel">Latitude</label></td>
+                                <td><input formControlName="latitude" class="cityInput" placeholder="add city latitude">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="cityLabel">Longitude</label></td>
+                                <td><input formControlName="longitude" class="cityInput"
+                                        placeholder="add city longitude"></td>
+                            </tr>
+                        </table>
+                        <div class="d-flex flex-row">
+                            <div id="submit" name="submit" [mat-dialog-close] (click)="SaveCity()">Submit</div>
+                            <div id="cancel" name="cancel" [mat-dialog-close]>Cancel</div>
+                        </div>
+                    </form>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </mat-dialog-content>
+</ng-template>

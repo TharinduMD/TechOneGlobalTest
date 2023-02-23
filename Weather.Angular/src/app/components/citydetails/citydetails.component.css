@@ -1,0 +1,61 @@
+.heading{
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+    padding-top: 30px;   
+}
+.whetherBox{
+    border: 1px solid rgb(90, 88, 253);
+    border-radius: 10px;
+    width: 250px;
+    background-color: rgb(90, 88, 253);
+    height: 250px;
+    color: rgb(157, 247, 197);
+}
+.divHeading{
+    text-align: center;
+    padding-top: 10px;
+}
+.listItem{
+    font-size: 18px;
+    font-weight: 200px;
+    color: aqua;
+    padding-left: 10px;
+}
+.cityAdd{
+    padding: 10px;
+}
+.addCityHeader{
+    margin: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.cityLabel{
+    color: black;
+    padding-left: 10px;
+}
+.cityInput{
+    border: none;
+    border-bottom-color: black;
+    margin-left: 20px;
+    width: 200px;
+    padding: 10px;
+}
+#submit,#cancel, .cityAdd{
+    margin: 20px;
+    width: 134px;
+    height: 43px;
+    padding: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer;
+}
+#submit, .cityAdd{
+    border: 3px solid green;
+}
+#cancel{
+    border: 3px solid red;
+}

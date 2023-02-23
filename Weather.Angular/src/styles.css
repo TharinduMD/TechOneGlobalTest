@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import url('https://unpkg.com/bootstrap@5.2.0/dist/css/bootstrap.min.css');
+html, body { height: 100%; }
+body { margin: 10px; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+.mat-mdc-dialog-surface, .mdc-dialog__surface{
+    width: 500px !important;
+    border-radius: 20px !important;
+    background-color :cyan impot !important;
+    padding: 20px !important;
+}

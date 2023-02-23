@@ -9,6 +9,6 @@ body { margin: 10px; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-mdc-dialog-surface, .mdc-dialog__surface{
     width: 500px !important;
     border-radius: 20px !important;
-    background-color :cyan impot !important;
+    background-color :cyan !important;
     padding: 20px !important;
 }

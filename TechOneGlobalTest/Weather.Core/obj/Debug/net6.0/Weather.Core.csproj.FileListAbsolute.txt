@@ -1,0 +1,12 @@
+E:\TechOneGlobal\TechOneGlobalTest\Weather.Core\bin\Debug\net6.0\Weather.Core.deps.json
+E:\TechOneGlobal\TechOneGlobalTest\Weather.Core\bin\Debug\net6.0\Weather.Core.dll
+E:\TechOneGlobal\TechOneGlobalTest\Weather.Core\bin\Debug\net6.0\Weather.Core.pdb
+E:\TechOneGlobal\TechOneGlobalTest\Weather.Core\obj\Debug\net6.0\Weather.Core.csproj.AssemblyReference.cache
+E:\TechOneGlobal\TechOneGlobalTest\Weather.Core\obj\Debug\net6.0\Weather.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\TechOneGlobal\TechOneGlobalTest\Weather.Core\obj\Debug\net6.0\Weather.Core.AssemblyInfoInputs.cache
+E:\TechOneGlobal\TechOneGlobalTest\Weather.Core\obj\Debug\net6.0\Weather.Core.AssemblyInfo.cs
+E:\TechOneGlobal\TechOneGlobalTest\Weather.Core\obj\Debug\net6.0\Weather.Core.csproj.CoreCompileInputs.cache
+E:\TechOneGlobal\TechOneGlobalTest\Weather.Core\obj\Debug\net6.0\Weather.Core.dll
+E:\TechOneGlobal\TechOneGlobalTest\Weather.Core\obj\Debug\net6.0\refint\Weather.Core.dll
+E:\TechOneGlobal\TechOneGlobalTest\Weather.Core\obj\Debug\net6.0\Weather.Core.pdb
+E:\TechOneGlobal\TechOneGlobalTest\Weather.Core\obj\Debug\net6.0\ref\Weather.Core.dll
